@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html">Inicio</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">Acerca</a>
+          </div>
+          
+        </div>
+        
+        <div class="right-side">
+          <div class="brand">
+            <div>JOÃO MACHADO</div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(resources/black_hole_port.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              
+              <a href="blackhole.html">
+                <div class="subtitle">
+                  Buracos Negros
+                </div>
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(resources/albert_einstein_port.jpg)"></div></a>
+            
+            <div class="img-text-wrapper">
+              
+              <a href="einstein.html">
+                <div class="subtitle">
+                  Relatividade Geral de Albert Einstein
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(resources/relativity_port.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              
+              <a href="relativity.html">
+                <div class="subtitle">
+                  Como os buracos negros desafiam a relatividade
+                </div>
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(resources/event_horizon_port.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              
+              <a href="sing_ev_horizon.html">
+                <div class="subtitle">
+                  Singularidade e o horizonte de eventos
+                </div>
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(resources/EHT_port.png)"></div>
+
+            <div class="img-text-wrapper">
+              
+              <a href="EHT.html">
+                <div class="subtitle">
+                  Event Horizon Telescope (EHT)
+                </div>
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(resources/string_theory_port.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              
+              <a href="string.html">
+                <div class="subtitle">
+                  Teoria de Cordas
+                </div>
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(resources/info_paradox_port.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              
+              <a href="info_paradox.html">
+                <div class="subtitle">
+                  O paradoxo da informação
+                </div>
+              </a>
+              
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(resources/simulation_port.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              
+              <a href="simulation.html">
+                <div class="subtitle">
+                  Simulação da interação de fotões com um buraco negro
+                </div>
+              </a>
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </body>
+
+  <script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        portfolioItem.childNodes[1].classList.add('img-darken');
+      })
+
+      portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+      })
+    })
+  </script>
+
+</html>

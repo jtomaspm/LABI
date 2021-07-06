@@ -1,0 +1,112 @@
+body {
+    -moz-transform: scale(2.0); /* for Firefox, default 1*/
+    zoom:200%; /* For Chrome, IE, default 100%*/
+    background-image: url('/imgs/wpp_b_wood.jpg') !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.content {
+    margin : auto;
+    text-align: center;   
+    font-family: cursive;
+}
+
+.music-maker-form {
+    color : black;
+    
+}
+
+.dark-btn {
+    border-radius: 15px;
+    background-color: #101010;
+    color : #C0E4D8;
+}
+
+.dark-text-small {
+    max-width: 50px;
+    min-height: 22px !important;
+    text-align: center !important;
+    font-size: 10px !important;
+    border-radius: 10px; 
+    background-color: #101010;
+    color : #C0E4D8;
+}
+
+.opt-dark {
+    bottom : 7px;
+    position: relative;
+    text-align: center !important;
+    font-size: 10px !important;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: #101010;
+    color : #C0E4D8;
+}
+
+
+input[type='checkbox']{
+    -webkit-appearance: none;
+	background-color: #f0f0f0;
+	border: 3px solid #3f3f3f;
+	padding: 9px;
+	border-radius: 14px;
+	display: inline-block;
+	position: relative;
+}
+
+
+.checkbox-fancy:checked {
+	background-color: #e9ecee;
+	border: 3px solid black;
+	color: #99a1a7;
+}
+
+.checkbox-fancy:checked:after {
+	content: "⚫";
+	font-size: 90%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: black;
+}
+
+#len1 {
+    color: #58B09F;
+}
+
+#len1:hover{
+    color: #C0E4D8;
+}
+
+#len2 {
+    color: #58B09F;
+}
+
+#len2:hover{
+    color: #C0E4D8;
+}
+
+#len3 {
+    color: #58B09F;
+}
+
+#len3:hover{
+    color: #C0E4D8;
+}
+
+#len4 {
+    color: #58B09F;
+}
+
+#len4:hover{
+    color: #C0E4D8;
+}
+
+.audio-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
